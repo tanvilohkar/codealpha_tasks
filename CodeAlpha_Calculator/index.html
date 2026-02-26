@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <!-- Theme Toggle -->
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+            
+            <!-- Display Screen -->
+            <div class="display-container">
+                <div class="display" id="display">0</div>
+            </div>
+            
+            <!-- Button Grid -->
+            <div class="buttons">
+                <!-- Row 1: Clear and Operators -->
+                <button class="btn btn-clear" id="clear" data-key="Escape">C</button>
+                <button class="btn btn-operator" id="delete" data-key="Backspace">⌫</button>
+                <button class="btn btn-operator" id="divide" data-key="/">÷</button>
+                <button class="btn btn-operator" id="multiply" data-key="*">×</button>
+                
+                <!-- Row 2: 7, 8, 9, - -->
+                <button class="btn btn-number" id="seven" data-key="7">7</button>
+                <button class="btn btn-number" id="eight" data-key="8">8</button>
+                <button class="btn btn-number" id="nine" data-key="9">9</button>
+                <button class="btn btn-operator" id="subtract" data-key="-">−</button>
+                
+                <!-- Row 3: 4, 5, 6, + -->
+                <button class="btn btn-number" id="four" data-key="4">4</button>
+                <button class="btn btn-number" id="five" data-key="5">5</button>
+                <button class="btn btn-number" id="six" data-key="6">6</button>
+                <button class="btn btn-operator" id="add" data-key="+">+</button>
+                
+                <!-- Row 4: 1, 2, 3, Equals -->
+                <button class="btn btn-number" id="one" data-key="1">1</button>
+                <button class="btn btn-number" id="two" data-key="2">2</button>
+                <button class="btn btn-number" id="three" data-key="3">3</button>
+                <button class="btn btn-equals" id="equals" data-key="Enter" rowspan="2">=</button>
+                
+                <!-- Row 5: 0, Decimal -->
+                <button class="btn btn-number btn-zero" id="zero" data-key="0">0</button>
+                <button class="btn btn-number" id="decimal" data-key=".">.</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
